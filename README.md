@@ -36,11 +36,17 @@ Figma: https://www.figma.com/community/file/1169625825293818878/mobile-ecommerce
 Recursos:
 
 Barra de búsqueda (Página de Inicio) : https://www.facebook.com/story.php?story_fbid=122161474094048970&id=61551469102959&mibextid=WC7FNe&rdid=ARxpghKfxeRvWZ3p
+
 Botón "Ver más" (Página de Detalle del Producto) : https://codepen.io/ckozalla/pen/LYLaVZW
+
 Menú móvil en forma de hamburguesa (Página del Carrito de Compras) : https://codepen.io/sanketbodke/pen/LYyzzYb
+
 Botón "Pagar" (Página del Carrito de Compras) :  https://codepen.io/ckozalla/pen/LYLaVZW
+
 Botón "Pagar" (Página del Carrito de Compras - Opcional) : https://sweetalert2.github.io/#examples
+
 Opción 1 (Opcional) : React o Vue.js para construir una interfaz de usuario interactiva y dinámica.
+
 Opción 2: Desarrollo puro utilizando HTML, CSS y JavaScript para una implementación más sencilla.
 
 
@@ -51,26 +57,29 @@ Nota: El uso de los recursos es obligatorio, excepto aquellos marcados como opci
 # Arquitectura del Proyecto: 
 
 # El árbol de archivos si el desarrollo es puro será el siguiente:
+
+```
 app_de_ecommerce_de_ropa/
 ├── css/
-│ ├── style.css
-│ ├── detail.css
-│ ├── checkout.css
-│ └── variables.css
+│   ├── style.css
+│   ├── detail.css
+│   ├── checkout.css
+│   └── variables.css
 ├── js/
-│ ├── Components/
-│ │ └── modal.js # Archivos según los componentes que crees (Opcional)
-│ ├── main.js
-│ ├── detail.js
-│ └── checkout.js
+│   ├── Components/
+│   │   └── modal.js  # Archivos según los componentes que crees (Opcional)
+│   ├── main.js
+│   ├── detail.js
+│   └── checkout.js
 ├── storage/
-│ ├── font/
-│ │ └── encode_sans/
-│ └── img/
+│   ├── font/
+│   │   └── encode_sans/
+│   └── img/
 ├── views/
-│ ├── detail.html
-│ └── checkout.html
+│   ├── detail.html
+│   └── checkout.html
 └── index.html
+```
 
 
 GitHub: Se utilizará para la gestión de versiones del código durante el desarrollo, aplicando conventional commits.
