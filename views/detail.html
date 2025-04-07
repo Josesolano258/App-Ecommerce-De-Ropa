@@ -7,59 +7,55 @@
   <title>Product Detail</title>
 </head>
 <body>
-  <div class="product-detail-container">
-    <!-- Imagen del producto -->
+  <div class="product-detail">
     <div class="product-image">
-      <img src="img/light-dress.jpg" alt="Light Dress Bless">
-      <!-- Botón de favorito (corazón) -->
-      <button class="favorite-btn">&#9825;</button>
+      <img src="/storage/img/Product 2 (1).png" alt="Light Dress Bless">
+      <button class="back-btn">←</button>
+      <button class="favorite-btn">♡</button>
     </div>
-
-    <!-- Información del producto -->
+  
     <div class="product-info">
-      <h1 class="product-title">Light Dress Bless</h1>
-      <div class="product-rating">
-        <span class="star">⭐</span>
-        <span>5.0 (<a href="#">7,932 reviews</a>)</span>
+      <h2>Light Dress Bless</h2>
+      <div class="rating">
+        ⭐ 5.0 <a href="#">(7,932 reviews)</a>
       </div>
-
-      <p class="product-description">
-        Its simple and elegant shape makes it perfect for those of you who like you who want minimalist clothes <strong>Read More...</strong>
+  
+      <p class="description">
+        Its simple and elegant shape makes it perfect for those of you who like minimalist clothes 
+        <span class="read-more">Read More...</span>
       </p>
-
-      <!-- Opciones de talla -->
-      <div class="product-options">
-        <div class="size-options">
-          <p>Choose Size</p>
-          <button class="size">S</button>
-          <button class="size">M</button>
-          <button class="size selected">L</button>
-          <button class="size">XL</button>
+  
+      <div class="options">
+        <div class="size">
+          <label>Choose Size</label>
+          <div class="choices">
+            <button>S</button>
+            <button>M</button>
+            <button>L</button>
+            <button>XL</button>
+          </div>
         </div>
-
-        <!-- Opciones de color -->
-        <div class="color-options">
-          <p>Color</p>
-          <button class="color-option gray"></button>
-          <button class="color-option lightgray"></button>
-          <button class="color-option black selected"></button>
+  
+        <div class="color">
+          <label>Color</label>
+          <div class="choices">
+            <button class="circle black"></button>
+            <button class="circle gray"></button>
+            <button class="circle beige"></button>
+          </div>
         </div>
       </div>
-
-      <!-- Sección de cantidad y botón de agregar al carrito -->
-      <div class="product-purchase">
+  
+      <div class="add-to-cart">
         <div class="quantity">
           <button>-</button>
           <span>1</span>
           <button>+</button>
         </div>
-
-        <button class="add-to-cart">
-          <img src="img/cart.png" alt="Cart icon">
-          Add to Cart | $162.99 <span class="old-price">$190.99</span>
-        </button>
+        <button class="add-button">Add to Cart | $162.99</button>
       </div>
     </div>
   </div>
+  
 </body>
 </html>
