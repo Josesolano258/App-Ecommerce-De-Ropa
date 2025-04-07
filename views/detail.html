@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/detail.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/detail.css">
+  <title>Product Detail</title>
 </head>
 <body>
-    
+  <div class="product-detail-container">
+    <!-- Imagen del producto -->
+    <div class="product-image">
+      <img src="img/light-dress.jpg" alt="Light Dress Bless">
+      <!-- Botón de favorito (corazón) -->
+      <button class="favorite-btn">&#9825;</button>
+    </div>
+
+    <!-- Información del producto -->
+    <div class="product-info">
+      <h1 class="product-title">Light Dress Bless</h1>
+      <div class="product-rating">
+        <span class="star">⭐</span>
+        <span>5.0 (<a href="#">7,932 reviews</a>)</span>
+      </div>
+
+      <p class="product-description">
+        Its simple and elegant shape makes it perfect for those of you who like you who want minimalist clothes <strong>Read More...</strong>
+      </p>
+
+      <!-- Opciones de talla -->
+      <div class="product-options">
+        <div class="size-options">
+          <p>Choose Size</p>
+          <button class="size">S</button>
+          <button class="size">M</button>
+          <button class="size selected">L</button>
+          <button class="size">XL</button>
+        </div>
+
+        <!-- Opciones de color -->
+        <div class="color-options">
+          <p>Color</p>
+          <button class="color-option gray"></button>
+          <button class="color-option lightgray"></button>
+          <button class="color-option black selected"></button>
+        </div>
+      </div>
+
+      <!-- Sección de cantidad y botón de agregar al carrito -->
+      <div class="product-purchase">
+        <div class="quantity">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+
+        <button class="add-to-cart">
+          <img src="img/cart.png" alt="Cart icon">
+          Add to Cart | $162.99 <span class="old-price">$190.99</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

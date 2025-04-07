@@ -1,0 +1,195 @@
+/* -------------------- RESETEO BÁSICO -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f6fa; /* Fondo claro para toda la página */
+    padding: 1rem;
+  }
+  
+  /* -------------------- CONTENEDOR PRINCIPAL -------------------- */
+  .detail-container {
+    max-width: 400px;
+    margin: 0 auto; /* Centra el contenedor en pantallas grandes */
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* -------------------- IMAGEN PRINCIPAL DEL PRODUCTO -------------------- */
+  .detail-image {
+    position: relative;
+  }
+  
+  .detail-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  /* Botón de corazón arriba a la derecha */
+  .favorite-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* -------------------- DETALLES DEL PRODUCTO -------------------- */
+  .detail-content {
+    padding: 1rem;
+  }
+  
+  /* Título del producto */
+  .product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Reseña del producto */
+  .review {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .review .rating {
+    color: #ffbe00;
+    font-weight: bold;
+  }
+  
+  /* Descripción del producto */
+  .product-description {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more {
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* -------------------- OPCIONES DE TALLA Y COLOR -------------------- */
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .options .size,
+  .options .color {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .options .size span,
+  .options .color span {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #333;
+  }
+  
+  /* Botones de talla */
+  .sizes {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .sizes button {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .sizes button.active {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Círculos de color */
+  .colors {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .colors .circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  
+  .colors .circle.black { background-color: black; }
+  .colors .circle.gray { background-color: gray; }
+  .colors .circle.light { background-color: #ddd; }
+  
+  .colors .circle.selected {
+    border-color: #333;
+  }
+  
+  /* -------------------- SECCIÓN DE PRECIO Y BOTÓN -------------------- */
+  .add-to-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .add-to-cart .price {
+    font-size: 1rem;
+  }
+  
+  .add-to-cart .old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+  }
+  
+  .add-to-cart .cart-icon {
+    margin-right: 0.5rem;
+  }
+  
+  /* -------------------- CONTADOR DE CANTIDAD -------------------- */
+  .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .quantity button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

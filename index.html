@@ -7,7 +7,87 @@
     <title>Ecommerce De Ropa</title>
 </head>
 <body>
-    <h1>Ecommerce De Ropa</h1>
-    <p>Prueba</p>
+    <div class="container">
+        <!-- Encabezado con mensaje de bienvenida y foto de perfil -->
+        <header class="header">
+            <div class="welcome">
+                <h1>Hello, Welcome 👋</h1>
+                <h2 class="username">Albert Stevano</h2>
+            </div>
+
+            <div class="profile">
+                <img src="/storage/img/Profile.png" alt="Foto de perfil de Albert Stevano" class="profile-img">
+            </div>
+        </header>
+        <div class="search-bar">
+            <div class="search-input">
+                <img src="/storage/img/search-normal.png" alt="Buscar" class="search-icon">
+                <input type="text" placeholder="Search clothes...">
+              </div>
+            <button class="filter-btn">
+              <img src="/storage/img/Main Icon.png" alt="Filter icon">
+            </button>
+          </div>
+
+          <div class="category-bar">
+            <button class="category-btn active">
+              <img src="/storage/img/all.png" alt="All Items">
+              <span>All Items</span>
+            </button>
+          
+            <button class="category-btn">
+              <img src="/storage/img/dress.png" alt="Dress">
+              <span>Dress</span>
+            </button>
+          
+            <button class="category-btn">
+              <img src="/storage/img/tshirt.png" alt="T-Shirt">
+              <span>T-Shirt</span>
+            </button>
+          
+            <button class="category-btn">
+              <img src="/storage/img/pants.png" alt="Pants">
+              <span>Pants</span>
+            </button>
+          </div>
+          <div class="product-list">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="/storage/img/product1.png" alt="Modern Light Clothes">
+                <button class="favorite-btn">❤️</button>
+              </div>
+              <div class="product-info">
+                <h3>Modern Light Clothes</h3>
+                <p class="product-category">T-Shirt</p>
+                <div class="price-rating">
+                  <span class="price">$212.99</span>
+                  <span class="rating">⭐ 5.0</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="product-card">
+              <div class="product-image">
+                <img src="/storage/img/product2.png" alt="Light Dress Bless">
+                <button class="favorite-btn">❤️</button>
+              </div>
+              <div class="product-info">
+                <h3>Light Dress Bless</h3>
+                <p class="product-category">Dress modern</p>
+                <div class="price-rating">
+                  <span class="price">$162.99</span>
+                  <span class="rating">⭐ 5.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <nav class="bottom-nav">
+        <button><img src="/storage/img/home.png" alt="Home"></button>
+        <button><img src="/storage/img/cart.png" alt="Cart"></button>
+        <button><img src="/storage/img/heart.png" alt="Favorites"></button>
+        <button><img src="/storage/img/user.png" alt="Profile"></button>
+      </nav>
+      
 </body>
 </html>
