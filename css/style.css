@@ -237,4 +237,53 @@ body {
     max-width: 1024px;
     padding: 40px;
   }
+
+  .header {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .search-bar {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+
+  .category-bar {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .product-info h3 {
+    font-size: 18px;
+  }
+
+  .bottom-nav {
+    position: static;
+    transform: none;
+    margin-top: 40px;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    background-color: #fff;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  }
+
+  .bottom-nav img {
+    filter: none;
+  }
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.favorite-btn .heart-icon {
+  transition: fill 0.3s ease;
 }

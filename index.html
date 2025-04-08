@@ -56,7 +56,16 @@
                 <div class="product-image">
                   <img src="/storage/img/Product 1.png" alt="Modern Light Clothes">
                   <button class="favorite-btn">
-                    <img src="/storage/img/Main Icon (5).png" alt="Favorite">
+                    <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 21.35c-.4-.36-1.45-1.32-2.3-2.06C5.4 15.36 2 12.28 2 8.5
+                               2 6.5 3.5 5 5.5 5
+                               c1.74 0 3.41 1.15 4.13 2.44
+                               h.74C13.09 6.15 14.76 5 16.5 5
+                               C18.5 5 20 6.5 20 8.5
+                               c0 3.78-3.4 6.86-7.7 10.79
+                               l-.3.26-.3-.26z"
+                            fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </button>
                 </div>
                 <div class="product-info">
@@ -75,7 +84,16 @@
                 <div class="product-image">
                   <img src="/storage/img/Product 2.png" alt="Light Dress Bless">
                   <button class="favorite-btn">
-                    <img src="/storage/img/Main Icon (5).png" alt="Favorite">
+                    <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 21.35c-.4-.36-1.45-1.32-2.3-2.06C5.4 15.36 2 12.28 2 8.5
+                               2 6.5 3.5 5 5.5 5
+                               c1.74 0 3.41 1.15 4.13 2.44
+                               h.74C13.09 6.15 14.76 5 16.5 5
+                               C18.5 5 20 6.5 20 8.5
+                               c0 3.78-3.4 6.86-7.7 10.79
+                               l-.3.26-.3-.26z"
+                            fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </button>
                 </div>
                 <div class="product-info">
@@ -92,7 +110,16 @@
               <div class="product-image">
                 <img src="/storage/img/Product 3.png" alt="Maroon Dark Top">
                 <button class="favorite-btn">
-                  <img src="/storage/img/Main Icon (5).png" alt="Favorite">
+                  <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35c-.4-.36-1.45-1.32-2.3-2.06C5.4 15.36 2 12.28 2 8.5
+                             2 6.5 3.5 5 5.5 5
+                             c1.74 0 3.41 1.15 4.13 2.44
+                             h.74C13.09 6.15 14.76 5 16.5 5
+                             C18.5 5 20 6.5 20 8.5
+                             c0 3.78-3.4 6.86-7.7 10.79
+                             l-.3.26-.3-.26z"
+                          fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </button>
               </div>
               <div class="product-info">
@@ -108,8 +135,18 @@
             <div class="product-card">
               <div class="product-image">
                 <img src="/storage/img/Product 4.png" alt="Light Dress Yellow">
+                  <!--Saca de internet :)-->
                 <button class="favorite-btn">
-                  <img src="/storage/img/Main Icon (5).png" alt="Favorite">
+                  <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35c-.4-.36-1.45-1.32-2.3-2.06C5.4 15.36 2 12.28 2 8.5
+                             2 6.5 3.5 5 5.5 5
+                             c1.74 0 3.41 1.15 4.13 2.44
+                             h.74C13.09 6.15 14.76 5 16.5 5
+                             C18.5 5 20 6.5 20 8.5
+                             c0 3.78-3.4 6.86-7.7 10.79
+                             l-.3.26-.3-.26z"
+                          fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </button>
               </div>
               <div class="product-info">
@@ -130,6 +167,21 @@
         <a href="#"><button><img src="/storage/img/Main Icon (3).png" alt="Favorites"></button></a>
         <a href="#"><button><img src="/storage/img/Main Icon (4).png" alt="Profile"></button></a>
       </nav>
+
+        <!--Saca de internet :)-->
+      <script>
+        document.querySelectorAll('.favorite-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const heartPath = btn.querySelector('svg path');
+            const isFavorited = heartPath.getAttribute('fill') === 'red';
       
+            if (isFavorited) {
+              heartPath.setAttribute('fill', 'none');
+            } else {
+              heartPath.setAttribute('fill', 'red');
+            }
+          });
+        });
+      </script>
 </body>
 </html>
