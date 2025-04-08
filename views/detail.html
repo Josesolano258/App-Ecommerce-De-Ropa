@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Configuración básica del documento -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Enlace al archivo CSS de estilos -->
   <link rel="stylesheet" href="/css/detail.css" />
   <title>Product Detail</title>
 </head>
 <body>
+
+  <!-- Contenedor principal del detalle del producto -->
   <div class="product-detail">
+
+    <!-- Sección de la imagen del producto -->
     <div class="product-image">
+      <!-- Botón para volver a la página principal -->
       <a href="/index.html" class="back-btn">←</a>
+      <!-- Imagen del producto -->
       <img src="/storage/img/Product 2.png" alt="Light Dress Bless" />
+      
+      <!-- Botón para marcar como favorito (corazón) -->
       <button class="favorite-btn">
         <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <!-- Contorno del ícono de corazón -->
           <path d="M12 21.35c-.4-.36-1.45-1.32-2.3-2.06C5.4 15.36 2 12.28 2 8.5
                    2 6.5 3.5 5 5.5 5
                    c1.74 0 3.41 1.15 4.13 2.44
@@ -25,18 +36,24 @@
       </button>
     </div>
 
+    <!-- Sección de la información del producto -->
     <div class="product-info">
       <h2>Light Dress Bless</h2>
+
+      <!-- Calificación del producto -->
       <div class="rating">
         ⭐ 5.0 <a href="#">(7,932 reviews)</a>
       </div>
 
+      <!-- Descripción breve del producto -->
       <p class="description">
         Its simple and elegant shape makes it perfect for those of you who like minimalist clothes 
         <span class="read-more">Read More...</span>
       </p>
 
+      <!-- Opciones del producto: Talla y Color -->
       <div class="options">
+        <!-- Selección de talla -->
         <div class="option-group">
           <label>Choose Size</label>
           <div class="choices">
@@ -47,6 +64,7 @@
           </div>
         </div>
       
+        <!-- Selección de color -->
         <div class="option-group">
           <label>Color</label>
           <div class="choices">
@@ -57,24 +75,29 @@
         </div>
       </div>
 
+      <!-- Sección para seleccionar cantidad y agregar al carrito -->
       <div class="add-to-cart">
         <div class="quantity">
+          <!-- Botones para aumentar o disminuir cantidad -->
           <button>-</button>
           <span>1</span>
           <button>+</button>
         </div>
+        <!-- Botón para ir al checkout con el producto seleccionado -->
         <a href="checkout.html" class="add-button">Add to Cart | $162.99</a>
       </div>
     </div>
   </div>
 
-  <!--Saca de internet :)-->
+  <!-- Scripts para interactividad -->
   <script>
+    // Funcionalidad del botón de favorito (cambiar color del corazón)
     document.querySelectorAll('.favorite-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const heartPath = btn.querySelector('svg path');
         const isFavorited = heartPath.getAttribute('fill') === 'red';
   
+        // Alternar entre rojo (favorito) y vacío (no favorito)
         if (isFavorited) {
           heartPath.setAttribute('fill', 'none');
         } else {
@@ -83,24 +106,25 @@
       });
     });
 
-  // Selección de talla
-  const sizeButtons = document.querySelectorAll('.size-btn');
-  sizeButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      sizeButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+    // Funcionalidad para seleccionar una talla
+    const sizeButtons = document.querySelectorAll('.size-btn');
+    sizeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remover 'active' de todas y aplicarlo solo a la seleccionada
+        sizeButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
     });
-  });
 
-  // Selección de color
-  const colorButtons = document.querySelectorAll('.color-btn');
-  colorButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      colorButtons.forEach(b => b.classList.remove('selected'));
-      btn.classList.add('selected');
+    // Funcionalidad para seleccionar un color
+    const colorButtons = document.querySelectorAll('.color-btn');
+    colorButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remover 'selected' de todos los botones y aplicarlo al nuevo
+        colorButtons.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
     });
-  });
-
   </script>
 </body>
 </html>

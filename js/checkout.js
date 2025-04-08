@@ -40,5 +40,11 @@ document.querySelectorAll('.product-item').forEach(item => {
   }
   
   document.querySelector('.pay-btn').addEventListener('click', () => {
-    alert('🎉 ¡Gracias por tu compra! Tu pedido está en camino. 🚚');
+    Swal.fire({
+      icon: 'success',
+      title: '¡Gracias por tu compra!',
+      text: 'Tu pedido ha sido procesado con éxito. 🚀',
+      confirmButtonText: 'Continuar',
+      confirmButtonColor: '#000',
+    });
   });

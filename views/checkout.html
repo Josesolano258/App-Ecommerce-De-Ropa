@@ -1,72 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Configuración básica de codificación y escala para responsive -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- Título de la pestaña -->
   <title>Checkout</title>
+  
+  <!-- Enlace al archivo de estilos CSS específico para la vista de checkout -->
   <link rel="stylesheet" href="/css/checkout.css" />
 </head>
 <body>
+
+  <!-- Contenedor principal de todo el contenido del checkout -->
   <div class="checkout-container">
+
+    <!-- Cabecera del checkout con botón de retroceso y menú hamburguesa -->
     <div class="checkout-header">
+      <!-- Botón de retroceso a la página de detalle -->
       <a href="detail.html" class="circle-btn">&#10094;</a>
+      
+      <!-- Título de la sección -->
       <h2>Checkout</h2>
-      <button class="circle-btn">&#8801;</button>
+
+      <!-- Menú hamburguesa responsive -->
+      <div class="hamburger-nav">
+        <!-- Toggle para abrir/cerrar menú -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Icono del menú hamburguesa -->
+        <label for="menu-toggle" class="menu-icon circle-btn">
+          <span class="navicon"></span>
+        </label>
+
+        <!-- Menú desplegable con enlaces a otras páginas -->
+        <ul class="menu">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/views/detail.html">Detalle</a></li>
+          <li><a href="/views/checkout.html">Carrito</a></li>
+          <li><a href="#">Mi Cuenta</a></li>
+        </ul>
+      </div>
     </div>
 
-<!-- PRODUCTO 1 -->
-<div class="product-item">
-  <img src="/storage/img/Product 1.png" alt="Producto 1">
-  <div class="product-details">
-    <h4>Modern light clothes</h4>
-    <p>Dress modern</p>
-    <span class="price">$212.99</span>
-  </div>
-  <div class="quantity">
-    <button class="decrease">−</button>
-    <span class="count">4</span>
-    <button class="increase">+</button>
-  </div>
-</div>
+    <!-- Producto 1 en el carrito -->
+    <div class="product-item">
+      <!-- Imagen del producto -->
+      <img src="/storage/img/Product 1.png" alt="Producto 1">
+      
+      <!-- Detalles del producto -->
+      <div class="product-details">
+        <h4>Modern light clothes</h4>
+        <p>Dress modern</p>
+        <span class="price">$212.99</span>
+      </div>
 
-<!-- PRODUCTO 2 -->
-<div class="product-item">
-  <img src="/storage/img/Product 2 (1).png" alt="Producto 2">
-  <div class="product-details">
-    <h4>Modern light clothes</h4>
-    <p>Dress modern</p>
-    <span class="price">$162.99</span>
-  </div>
-  <div class="quantity">
-    <button class="decrease">−</button>
-    <span class="count">1</span>
-    <button class="increase">+</button>
-  </div>
-</div>
+      <!-- Controles de cantidad -->
+      <div class="quantity">
+        <button class="decrease">−</button>
+        <span class="count">4</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
 
+    <!-- Producto 2 en el carrito -->
+    <div class="product-item">
+      <img src="/storage/img/Product 2 (1).png" alt="Producto 2">
+      <div class="product-details">
+        <h4>Modern light clothes</h4>
+        <p>Dress modern</p>
+        <span class="price">$162.99</span>
+      </div>
+      <div class="quantity">
+        <button class="decrease">−</button>
+        <span class="count">1</span>
+        <button class="increase">+</button>
+      </div>
+    </div>
 
+    <!-- Información de envío -->
     <div class="shipping-info">
       <h4>Shipping Information</h4>
+
+      <!-- Tarjeta seleccionada para el pago -->
       <div class="card-info">
         <div class="card">
           <span class="visa">VISA</span>
           <span>**** **** **** 2143</span>
         </div>
+
+        <!-- Botón para mostrar más opciones de tarjeta -->
         <button class="dropdown-btn">⌄</button>
       </div>
     </div>
 
+    <!-- Resumen del pedido -->
     <div class="summary">
+      <!-- Total de productos y precio -->
       <p>Total (<span class="items-count">2 items</span>) <span class="total">$375.98</span></p>
+      <!-- Costo de envío -->
       <p>Shipping Fee <span>$0.00</span></p>
+      <!-- Descuento aplicado -->
       <p>Discount <span>$0.00</span></p>
       <hr>
+      <!-- Subtotal final -->
       <p class="subtotal">Sub Total <span class="subtotal-amount">$375.98</span></p>
     </div>
 
+    <!-- Botón de pago -->
     <button class="pay-btn">Pay</button>
   </div>
 
+  <!-- Script JS personalizado para el checkout (manejo de cantidades, validaciones, etc.) -->
   <script src="/js/checkout.js"></script>
+
+  <!-- Librería SweetAlert2 para mostrar alertas bonitas al pagar o validar -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>

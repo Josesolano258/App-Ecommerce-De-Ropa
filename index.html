@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS principal -->
     <link rel="stylesheet" href="css/style.css">
     <title>Ecommerce De Ropa</title>
 </head>
 <body>
     <div class="container">
-        <!-- Encabezado con mensaje de bienvenida y foto de perfil -->
+
+        <!-- 🧢 ENCABEZADO PRINCIPAL -->
         <header class="header">
+            <!-- Mensaje de bienvenida -->
             <div class="welcome">
                 <h1>Hello, Welcome 👋</h1>
                 <h2 class="username">Albert Stevano</h2>
             </div>
 
+            <!-- Imagen de perfil del usuario -->
             <div class="profile">
                 <img src="/storage/img/Profile.png" alt="Foto de perfil de Albert Stevano" class="profile-img">
             </div>
         </header>
+
+        <!-- 🔍 BARRA DE BÚSQUEDA -->
         <div class="search-bar">
             <div class="search-input">
                 <img src="/storage/img/search-normal.png" alt="Buscar" class="search-icon">
                 <input type="text" placeholder="Search clothes...">
-              </div>
+            </div>
+            <!-- Botón para aplicar filtros (estéticamente poderoso, funcionalmente aún en veremos) -->
             <button class="filter-btn">
               <img src="/storage/img/Main Icon.png" alt="Filter icon">
             </button>
-          </div>
+        </div>
 
-          <div class="category-bar">
+        <!-- 🧭 CATEGORÍAS DE PRODUCTOS -->
+        <div class="category-bar">
+            <!-- Categoría: Todos los productos -->
             <button class="category-btn active">
               <img src="/storage/img/Default Icon.png" alt="All Items">
               <span>All Items</span>
             </button>
-          
+
+            <!-- Categoría: Vestidos -->
             <button class="category-btn">
               <img src="/storage/img/Default Icon (1).png" alt="Dress">
               <span>Dress</span>
             </button>
-          
+
+            <!-- Categoría: Camisetas -->
             <button class="category-btn">
               <img src="/storage/img/Default Icon (2).png" alt="T-Shirt">
               <span>T-Shirt</span>
             </button>
-          
+
+            <!-- Categoría: Pantalones -->
             <button class="category-btn">
               <img src="/storage/img/Default Icon (3).png" alt="Pants">
               <span>Pants</span>
             </button>
-          </div>
+        </div>
 
-          <div class="product-list">
+        <!-- 🛍️ LISTA DE PRODUCTOS -->
+        <div class="product-list">
+
+            <!-- Tarjeta de producto 1 -->
             <div class="product-card">
                 <div class="product-image">
                   <img src="/storage/img/Product 1.png" alt="Modern Light Clothes">
+                  
+                  <!-- Botón para marcar como favorito -->
                   <button class="favorite-btn">
+                    <!-- Ícono de corazón SVG -->
                     <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 21.35c-.4-.36-1.45-1.32-2.3-2.06C5.4 15.36 2 12.28 2 8.5
-                               2 6.5 3.5 5 5.5 5
-                               c1.74 0 3.41 1.15 4.13 2.44
-                               h.74C13.09 6.15 14.76 5 16.5 5
-                               C18.5 5 20 6.5 20 8.5
-                               c0 3.78-3.4 6.86-7.7 10.79
-                               l-.3.26-.3-.26z"
-                            fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="..." fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </button>
                 </div>
+
+                <!-- Información del producto -->
                 <div class="product-info">
                   <h3>Modern Light Clothes</h3>
                   <p class="product-category">T-Shirt</p>
@@ -76,24 +90,15 @@
                     <span class="rating">⭐ 5.0</span>
                   </div>
                 </div>
-              
             </div>
-          
+
+            <!-- Tarjeta de producto 2 con enlace a detalle -->
             <div class="product-card">
               <a href="/views/detail.html" class="product-link">
                 <div class="product-image">
                   <img src="/storage/img/Product 2.png" alt="Light Dress Bless">
                   <button class="favorite-btn">
-                    <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 21.35c-.4-.36-1.45-1.32-2.3-2.06C5.4 15.36 2 12.28 2 8.5
-                               2 6.5 3.5 5 5.5 5
-                               c1.74 0 3.41 1.15 4.13 2.44
-                               h.74C13.09 6.15 14.76 5 16.5 5
-                               C18.5 5 20 6.5 20 8.5
-                               c0 3.78-3.4 6.86-7.7 10.79
-                               l-.3.26-.3-.26z"
-                            fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <svg class="heart-icon" ...></svg>
                   </button>
                 </div>
                 <div class="product-info">
@@ -105,21 +110,23 @@
                   </div>
                 </div>
               </a>
+
+              <!-- Botón adicional para ver producto (sí, ya estaba dentro del <a>, pero doble seguridad nunca sobra) -->
+              <a href="/views/detail.html" class="btn-ver-mas">
+                <span>Ver producto</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
             </div>
+
+            <!-- Tarjeta de producto 3 -->
             <div class="product-card">
               <div class="product-image">
                 <img src="/storage/img/Product 3.png" alt="Maroon Dark Top">
                 <button class="favorite-btn">
-                  <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21.35c-.4-.36-1.45-1.32-2.3-2.06C5.4 15.36 2 12.28 2 8.5
-                             2 6.5 3.5 5 5.5 5
-                             c1.74 0 3.41 1.15 4.13 2.44
-                             h.74C13.09 6.15 14.76 5 16.5 5
-                             C18.5 5 20 6.5 20 8.5
-                             c0 3.78-3.4 6.86-7.7 10.79
-                             l-.3.26-.3-.26z"
-                          fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+                  <svg class="heart-icon" ...></svg>
                 </button>
               </div>
               <div class="product-info">
@@ -131,22 +138,13 @@
                 </div>
               </div>
             </div>
-          
+
+            <!-- Tarjeta de producto 4 (saca de internet 😅) -->
             <div class="product-card">
               <div class="product-image">
                 <img src="/storage/img/Product 4.png" alt="Light Dress Yellow">
-                  <!--Saca de internet :)-->
                 <button class="favorite-btn">
-                  <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21.35c-.4-.36-1.45-1.32-2.3-2.06C5.4 15.36 2 12.28 2 8.5
-                             2 6.5 3.5 5 5.5 5
-                             c1.74 0 3.41 1.15 4.13 2.44
-                             h.74C13.09 6.15 14.76 5 16.5 5
-                             C18.5 5 20 6.5 20 8.5
-                             c0 3.78-3.4 6.86-7.7 10.79
-                             l-.3.26-.3-.26z"
-                          fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+                  <svg class="heart-icon" ...></svg>
                 </button>
               </div>
               <div class="product-info">
@@ -158,23 +156,36 @@
                 </div>
               </div>
             </div>
-          </div>
-
+        </div>
     </div>
-    <nav class="bottom-nav">
-        <a href="index.html"><button><img src="/storage/img/Main Icon (1).png" alt="Home"></button></a>
-        <a href="#"><button><img src="/storage/img/Main Icon (2).png" alt="Cart"></button></a>
-        <a href="#"><button><img src="/storage/img/Main Icon (3).png" alt="Favorites"></button></a>
-        <a href="#"><button><img src="/storage/img/Main Icon (4).png" alt="Profile"></button></a>
-      </nav>
 
-        <!--Saca de internet :)-->
-      <script>
+    <!-- 📱 NAVEGACIÓN INFERIOR FIJA -->
+    <nav class="bottom-nav">
+        <!-- Enlace a Inicio -->
+        <a href="index.html">
+            <button><img src="/storage/img/Main Icon (1).png" alt="Home"></button>
+        </a>
+        <!-- Enlace a Carrito -->
+        <a href="#">
+            <button><img src="/storage/img/Main Icon (2).png" alt="Cart"></button>
+        </a>
+        <!-- Enlace a Favoritos -->
+        <a href="#">
+            <button><img src="/storage/img/Main Icon (3).png" alt="Favorites"></button>
+        </a>
+        <!-- Enlace a Perfil -->
+        <a href="#">
+            <button><img src="/storage/img/Main Icon (4).png" alt="Profile"></button>
+        </a>
+    </nav>
+
+    <!-- ❤️ SCRIPT para activar/desactivar favoritos -->
+    <script>
         document.querySelectorAll('.favorite-btn').forEach(btn => {
           btn.addEventListener('click', () => {
             const heartPath = btn.querySelector('svg path');
             const isFavorited = heartPath.getAttribute('fill') === 'red';
-      
+
             if (isFavorited) {
               heartPath.setAttribute('fill', 'none');
             } else {
@@ -182,6 +193,6 @@
             }
           });
         });
-      </script>
+    </script>
 </body>
 </html>
