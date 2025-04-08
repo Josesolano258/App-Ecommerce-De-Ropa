@@ -1,83 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/checkout.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/checkout.css">
+  <title>Checkout</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Encabezado de la página de checkout -->
-        <header class="checkout-header">
-          <button class="back-btn">←</button>
-          <h2>Checkout</h2>
-          <button class="more-options">&#8942;</button>
-        </header>
-    
-        <!-- Lista de productos en el carrito -->
-        <div class="cart-item">
-          <img src="/storage/img/model1.jpg" alt="Modern light clothes">
-          <div class="item-info">
-            <h3>Modern light clothes</h3>
-            <p>Dress modern</p>
-            <span class="price">$212.99</span>
-          </div>
-          <!-- Controles de cantidad -->
-          <div class="quantity-control">
-            <button>-</button>
-            <span>4</span>
-            <button>+</button>
-          </div>
-        </div>
-    
-        <div class="cart-item">
-          <img src="/storage/img/model2.jpg" alt="Modern light clothes">
-          <div class="item-info">
-            <h3>Modern light clothes</h3>
-            <p>Dress modern</p>
-            <span class="price">$162.99</span>
-          </div>
-          <!-- Controles de cantidad -->
-          <div class="quantity-control">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-        </div>
-    
-        <!-- Información de envío -->
-        <section class="shipping-info">
-          <h4>Shipping Information</h4>
-          <div class="card">
-            <img src="/storage/img/visa.png" alt="Visa">
-            <span>**** **** **** 2143</span>
-            <span class="arrow">▼</span>
-          </div>
-        </section>
-    
-        <!-- Resumen del pedido -->
-        <section class="order-summary">
-          <div class="summary-line">
-            <span>Total (9 items)</span>
-            <span>$1,014.95</span>
-          </div>
-          <div class="summary-line">
-            <span>Shipping Fee</span>
-            <span>$0.00</span>
-          </div>
-          <div class="summary-line">
-            <span>Discount</span>
-            <span>$0.00</span>
-          </div>
-          <div class="summary-line total">
-            <span>Sub Total</span>
-            <span>$1,014.95</span>
-          </div>
-        </section>
-    
-        <!-- Botón de pago -->
-        <button class="pay-btn">Pay</button>
+  <div class="checkout-container">
+    <div class="checkout-header">
+      <a href="detail.html" class="circle-btn">&#10094;</a> <!-- Flecha < -->
+      <h2>Checkout</h2>
+      <button class="circle-btn">&#8801;</button> <!-- Icono ≡ -->
+    </div>
+
+    <div class="product-item">
+      <img src="/storage/img/Imagenesmini.png" alt="Modern light clothes">
+      <div class="item-info">
+        <h4>Modern light clothes</h4>
+        <p>Dress modern</p>
+        <span class="price">$212.99</span>
       </div>
+      <div class="quantity">
+        <button>−</button>
+        <span>4</span>
+        <button>+</button>
+      </div>
+    </div>
+
+    <div class="product-item">
+      <img src="/storage/img/imagenesmini2.png" alt="Modern light clothes">
+      <div class="item-info">
+        <h4>Modern light clothes</h4>
+        <p>Dress modern</p>
+        <span class="price">$162.99</span>
+      </div>
+      <div class="quantity">
+        <button>−</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+    </div>
+
+    <div class="shipping-info">
+      <h4>Shipping Information</h4>
+      <div class="card-info">
+        <div class="card">
+          <span class="visa">VISA</span>
+          <span>**** **** **** 2143</span>
+        </div>
+        <button class="dropdown-btn">⌄</button>
+      </div>
+    </div>
+
+    <div class="summary">
+      <p>Total (9 items) <span>$1,014.95</span></p>
+      <p>Shipping Fee <span>$0.00</span></p>
+      <p>Discount <span>$0.00</span></p>
+      <hr>
+      <p class="subtotal">Sub Total <span>$1,014.95</span></p>
+    </div>
+
+    <button class="pay-btn">Pay</button>
+  </div>
 </body>
 </html>

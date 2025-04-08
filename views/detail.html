@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/detail.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/css/detail.css" />
   <title>Product Detail</title>
 </head>
 <body>
   <div class="product-detail">
     <div class="product-image">
-      <img src="/storage/img/Product 2 (1).png" alt="Light Dress Bless">
-      <button class="back-btn">←</button>
+      <a href="/index.html" class="back-btn">←</a>
+      <img src="/storage/img/Product 2.png" alt="Light Dress Bless" />
       <button class="favorite-btn">♡</button>
     </div>
-  
+
     <div class="product-info">
       <h2>Light Dress Bless</h2>
       <div class="rating">
         ⭐ 5.0 <a href="#">(7,932 reviews)</a>
       </div>
-  
+
       <p class="description">
         Its simple and elegant shape makes it perfect for those of you who like minimalist clothes 
         <span class="read-more">Read More...</span>
       </p>
-  
+
       <div class="options">
         <div class="size">
           <label>Choose Size</label>
-          <div class="choices">
-            <button>S</button>
+          <div class="choices size-options">
+            <button class="selected">S</button>
             <button>M</button>
             <button>L</button>
             <button>XL</button>
           </div>
         </div>
-  
+
         <div class="color">
           <label>Color</label>
-          <div class="choices">
-            <button class="circle black"></button>
+          <div class="choices color-options">
+            <button class="circle black selected"></button>
             <button class="circle gray"></button>
             <button class="circle beige"></button>
           </div>
         </div>
       </div>
-  
+
       <div class="add-to-cart">
         <div class="quantity">
           <button>-</button>
           <span>1</span>
           <button>+</button>
         </div>
-        <button class="add-button">Add to Cart | $162.99</button>
+        <a href="checkout.html" class="add-button">Add to Cart | $162.99</a>
       </div>
     </div>
   </div>
-  
 </body>
 </html>
